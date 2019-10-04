@@ -74,14 +74,37 @@ header {
   padding-top: 400px;
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  cursor: pointer; }
+
+.company-information {
+  margin-top: 200px; }
+  .company-information p {
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    line-height: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 40px; }
+  .company-information h2 {
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 40px; }
 
 .hidden {
   display: none; }
 
 body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-color: #7e6c88; }
 
 .img-one {
   top: 0;
@@ -96,10 +119,14 @@ body {
   background: url(../images/mat_3.png) no-repeat right; }
 
 .img-three {
+  position: relative;
   top: 0;
   width: 100%;
   height: 435px;
-  background: url(../images/mat_4.jpg) no-repeat center; }
+  background: url(../images/mat_4.jpg) no-repeat center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 .text-one {
   background-color: #7e6c88;
@@ -114,10 +141,22 @@ body {
     padding-right: 5px;
     padding-top: 40px; }
 
-footer {
-  width: 100%;
-  height: 100px;
-  background-color: #7e6c88; }
+.contact-information {
+  width: 250px;
+  height: 60px;
+  background-color: #7e6c88;
+  border-radius: 40%;
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer; }
+  .contact-information a {
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    font-size: 23px;
+    text-decoration: none; }
+  .contact-information ul {
+    text-align: center;
+    padding-top: 20px; }
 
 @media screen and (min-width: 497px) {
   .img-one {
@@ -159,10 +198,13 @@ footer {
   body {
     background-color: #7e6c88; }
   .img-one {
-    width: 50%; }
+    width: 50%;
+    height: auto; }
   .img-two {
-    width: 50%; }
+    width: 50%;
+    height: auto; }
   .body-images-one {
+    height: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center; }
@@ -170,10 +212,14 @@ footer {
     padding-top: 95px;
     width: 50%; }
   .body-images-two {
+    height: 50%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center; }
   .img-three {
     width: 100%;
-    height: 90%;
-    background: url(../images/mat_4_desktop_two.jpg) no-repeat center; } }
+    height: 100%;
+    background: url(../images/mat_4_desktop_two.jpg) no-repeat center; }
+  .contact-information {
+    width: 400px;
+    height: 60px; } }

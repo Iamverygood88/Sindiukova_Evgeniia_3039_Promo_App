@@ -31,4 +31,5 @@ header {
   padding-top: 400px;
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  cursor: pointer; }
