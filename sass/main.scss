@@ -1,4 +1,196 @@
-main {
-    background-color: pink;
+@import '_vars.scss';
+@import 'modules/reset';
+@import 'modules/header';
+
+
+
+.hidden {
+    display: none;
 }
+
+body {
+    width: 100%; 
+    height: 100%; 
+}
+
+
+.img-one {
+    top: 0;
+    width: 100%; 
+    height: 435px;
+    background: url(../images/mat_2.png) no-repeat left;
+
+
+}
+
+.img-two {
+    top: 0;
+    width: 100%; 
+    height: 435px;
+    background: url(../images/mat_3.png) no-repeat right;
+
+}
+
+.img-three {
+    top: 0;
+    width: 100%; 
+    height: 435px;
+    background: url(../images/mat_4.jpg) no-repeat center;
+
+}
+
+.text-one {
+    background-color: $main-color;
+    height: 300px;
+    p {
+        font-family: 'Rajdhani', sans-serif;
+        color: white;
+        font-size: 23px;
+        text-align: center;
+        line-height: 35px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 40px; 
+     
+    }
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: $main-color;
+}
+
+// media screen for bugs
+
+@media screen and (min-width: 497px) {
+
+    .img-one {
+        background: url(../images/mat_2_tablet.png) no-repeat left;
+    
+    }
+
+    
+}
+
+@media screen and (min-width: 635px) {
+
+    .img-two {
+        background: url(../images/mat_3_tablet.png) no-repeat right;
+    
+    }
+
+    
+}
+
+@media screen and (min-width: 661px) {
+
+    .img-three {
+        background: url(../images/mat_4_tablet.jpg) no-repeat center;
+    
+    }
+
+    .img-one {
+        background: url(../images/mat_2_tablet_two.png) no-repeat left;
+    
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .text-one {
+        p {
+            font-size: 25px;
+            text-align: center;
+            line-height: 37px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 85px; 
+         
+        }
+    }  
+
+    header {
+        background: url(../images/yoga_main_tablet.jpg) no-repeat center;
+    
+    }
+
+    .btn-down {
+        padding-bottom: 50px;
+        padding-top: 600px;
+        
+    }
+}
+
+@media screen and (min-width: 994px) {
+
+    .img-three {
+        background: url(../images/mat_4_desktop.jpg) no-repeat center;
+    
+    } 
+
+    header{
+        background: url(../images/yoga_main_desktop.jpg) no-repeat center;
+    }
+
+    .img-one {
+        background: url(../images/mat_2_desktop.jpg) no-repeat center;
+    
+    } 
+}
+
+// desktop
+
+@media screen and (min-width: 1024px) {
+
+    body{
+        background-color: $main-color;
+    }
+
+
+    .img-one {
+        width: 50%; 
+        
+    }
+
+    .img-two {
+        width: 50%; 
+        
+    }
+
+    .body-images-one {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .text-one {
+        padding-top: 95px;
+        width: 50%;
+    }
+
+    .body-images-two {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+       
+    }
+
+
+    .img-three {
+        width: 100%; 
+        height: 90%;
+        background: url(../images/mat_4_desktop_two.jpg) no-repeat center;
+    
+    }
+
+    
+
+   
+}
+
+
 
