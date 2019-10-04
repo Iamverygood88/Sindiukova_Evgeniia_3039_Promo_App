@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 
 app.get('/contact', (req, res) => {
     // res.sendFile(path.join(__dirname + '/views/contact.html'));
-    res.render('contact', {message: 'what is your name?'})
+    res.render('contact')
 })
 
 // app.get('/users', (req, res) => {
@@ -43,9 +43,9 @@ app.get('/contact', (req, res) => {
     
 // })
 
-app.get('/portfolio', (req, res) => {
-    res.send('on the portfolio page!');
-})
+// app.get('/portfolio', (req, res) => {
+//     res.send('on the portfolio page!');
+// })
 
 
 app.listen(port, () => {
