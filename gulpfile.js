@@ -10,4 +10,4 @@ function compile(done) {
 
 }
 
-exports.compile = compile
+exports.compile = compile;
